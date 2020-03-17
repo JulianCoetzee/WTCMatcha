@@ -5,4 +5,29 @@
         "http://struts.apache.org/dtds/struts-2.3.dtd">
 
 <struts>
+
+    <constant name="struts.devMode" value="false" />
+    <constant name="struts.serve.static" value="false" />
+    <constant name="struts.enable.SlashesInActionNames" value="true"/>
+    <constant name="struts.ui.theme" value="simple" />
+    <constant name="struts.action.extension" value=""/>
+
+    <package name="main" extends="struts-default" namespace="/">
+
+        <interceptors>
+
+            //Define interceptors here
+
+            <interceptor-stack name="html">
+                //Add interceptors here
+            </interceptor-stack>
+
+        </interceptors>
+
+        <action name="navigate*" class="Actions.navigateAction">
+            <interceptor-ref name="html"/>
+            <result name="first">index.jsp</result>
+        </action>
+
+    </package>
 </struts>
