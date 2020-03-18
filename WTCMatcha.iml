@@ -30,5 +30,9 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Struts 2" level="project" />
     <orderEntry type="library" name="javax:javaee-web-api:8.0.1" level="project" />
+    <orderEntry type="library" name="ognl:ognl:3.2.4" level="project" />
+    <orderEntry type="library" name="org.apache.commons:commons-lang3:3.3.2" level="project" />
+    <orderEntry type="library" name="commons-fileupload:commons-fileupload:1.4" level="project" />
+    <orderEntry type="library" name="freemarker:freemarker:2.3.8" level="project" />
   </component>
 </module>

@@ -14,18 +14,20 @@
 
     <package name="main" extends="struts-default" namespace="/">
 
-        <interceptors>
+        <!--<interceptors>-->
 
-            //Define interceptors here
+            <!--<interceptor name="0" class=""/>-->
+            <!--//Define interceptors here-->
 
-            <interceptor-stack name="html">
-                //Add interceptors here
-            </interceptor-stack>
+            <!--<interceptor-stack name="htmlStack">-->
+                <!--<interceptor-ref name="0"/>-->
+                <!--//Add interceptors here-->
+            <!--</interceptor-stack>-->
 
-        </interceptors>
+        <!--</interceptors>-->
 
         <action name="navigate*" class="Actions.navigateAction">
-            <interceptor-ref name="html"/>
+            <!--<interceptor-ref name="htmlStack"/>-->
             <result name="first">index.jsp</result>
         </action>
 
